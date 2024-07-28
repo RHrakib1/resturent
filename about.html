@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #ex {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .company {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 1200px;
+            margin: 50px auto;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .about-company {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-company,
+        .staff-profiles {
+            margin-bottom: 40px;
+        }
+
+        .about-company img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!--section of nav-->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-5xl from-stone-600 font-extrabold">Restora</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./faq.html">Faq</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--section of about-->
+    <section>
+        <div class="container ">
+            <!--section of company-->
+            <div class="company">
+                <h2 class="text-5xl p-5 font-extrabold mb-5">About Our Company</h2>
+                <div class="about-company gap-3">
+                    <p class="p-5">Our restaurant was founded with the mission to bring delicious and high-quality food
+                        to our
+                        community. We pride ourselves on our commitment to using fresh, locally-sourced ingredients and
+                        providing exceptional service to our customers. Whether you're dining in or ordering out, we
+                        community. We pride ourselves on our commitment to using fresh, locally-sourced ingredients and
+                        providing exceptional service to our customers. Whether you're dining in or ordering out, we
+                        strive
+                        to make every experience a memorable.</p>
+                    <img src="company.jpg" alt="About our company">
+                </div>
+            </div>
+            <!--staff section-->
+            <h2 class="text-5xl p-5 font-extrabold mb-5">Staf Information</h2>
+            <div class="flex flex-1 ml-10 gap-3 ">
+                <!--section of staff 1-->
+                <div class="hero p-5" id="ex">
+                    <div class="p-5 ">
+                        <img src="ceo.jpg" class="max-w-sm rounded-full shadow-2xl" />
+                        <div>
+                            <h1 class="text-4xl font-bold p-2">John Doe</h1>
+                            <p class="font-semibold">Head Chef</p>
+                            <p class="py-3">
+                                John is the creative force behind our menu, bringing years of culinary experience and a
+                                passion
+                                for innovative dishes.
+                            </p>
+                            <button class="btn btn-primary">See more</button>
+                        </div>
+                    </div>
+                </div>
+                <!--section of staff 2-->
+                <div class="hero p-5" id="ex">
+                    <div class="p-5 ">
+                        <img src="manager.jpg" class="max-w-sm rounded-full shadow-2xl" />
+                        <div>
+                            <h1 class="text-4xl font-bold p-2">Jane Smith</h1>
+                            <p class="font-semibold">General Manager</p>
+                            <p class="py-3">
+                                Jane ensures that our restaurant runs smoothly, overseeing everything from customer
+                                service to
+                                daily operations.
+                            </p>
+                            <button class="btn btn-primary">See more</button>
+                        </div>
+                    </div>
+                </div>
+                <!--section of staff 3-->
+                <div class="hero p-5 " id="ex">
+                    <div class="p-5 ">
+                        <img src="employwer.jpg" class="max-w-sm rounded-full shadow-2xl" />
+                        <div>
+                            <h1 class="text-4xl font-bold p-2">Emily Johnson</h1>
+                            <p class="font-semibold">Sous Chef</p>
+                            <p class="py-3">
+                                Emily works closely with John to prepare our dishes, ensuring each plate meets our high
+                                standards
+                                of quality.
+                            </p>
+                            <button class="btn btn-primary">See more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--date and time-->
+     <div class="footer block text-center mt-16 p-2" id="datetime">
+        <!-- Date and time will be injected here by JavaScript -->
+    </div>
+    <!--date time js-->
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            };
+            const dateTimeString = now.toLocaleDateString('en-US', options);
+            document.getElementById('datetime').innerText = dateTimeString;
+        }
+
+        // Update the date and time on page load
+        updateDateTime();
+
+        // Optionally, update the date and time every second
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>hot brack</title>
+
+</head>
+
+<body>
+
+    <head class="home">
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-5xl from-stone-600 font-extrabold">Restora</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                    <li><a href="./index.html">Home</a></li>
+                    
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                    <li><a href="./faq.html">Faq</a></li>
+                </ul>
+            </div>
+        </div>
+    </head>
+
+    <body>
+        <!--section of banner-->
+        <div class="hero min-h-screen rounded-2xl " style="background-image: url(./home2.jpg);">
+            <div class="hero-overlay rounded-2xl bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                    <p class="mb-5 text-5xl font-bold">Wellcome To Our Restora</p>
+                    <p class="mb-5 text-lg">
+                        Become an Envato Author and sell your work with the largest online creative community sell your
+                        work with the largest online creative community.
+                    </p>
+                    <button class="btn btn-primary"><a
+                            href="https://author.envato.com/?_ga=2.133918990.1455447651.1721991494-1283323234.1721991494">Get
+                            Started</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!--section of card-->
+        <p class=" mt-40 font-extrabold text-5xl text-center">Our Product</p>
+        <div class="grid grid-cols-4 gap-2 mt-4 p-9">
+
+            <div class="card bg-amber-300 hover:bg-amber-200   shadow-xl">
+                <figure>
+                    <img class="w-full" src="./images.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title font-bold">
+                        Barger
+                        <div class="badge badge-secondary">25% off</div>
+                    </h2>
+                    <p>Delicious spaghti with marinara sauce</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline font-semibold">Price: $13.34</div>
+                        <div class="badge badge-outline font-semibold">Products</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-amber-300 hover:bg-amber-200  shadow-xl">
+                <figure>
+                    <img class="w-full" src="./images.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title font-bold">
+                        Barger
+                        <div class="badge badge-secondary">25% off</div>
+                    </h2>
+                    <p>Delicious spaghti with marinara sauce</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline font-semibold">Price: $13.34</div>
+                        <div class="badge badge-outline font-semibold">Products</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-amber-300 hover:bg-amber-200  shadow-xl">
+                <figure>
+                    <img class="w-full" src="./images.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title font-bold">
+                        Barger
+                        <div class="badge badge-secondary">25% off</div>
+                    </h2>
+                    <p>Delicious spaghti with marinara sauce</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline font-semibold">Price: $13.34</div>
+                        <div class="badge badge-outline font-semibold">Products</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-amber-300 hover:bg-amber-200  shadow-xl">
+                <figure>
+                    <img class="w-full" src="./images.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title font-bold">
+                        Barger
+                        <div class="badge badge-secondary">25% off</div>
+                    </h2>
+                    <p>Delicious spaghti with marinara sauce</p>
+                    <div class="card-actions justify-end">
+                        <div class="badge badge-outline font-semibold">Price: $13.34</div>
+                        <div class="badge badge-outline font-semibold">Products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--section of the coustomer feedback-->
+        <section class="feedback mt-40 bg-gray-300 p-5">
+            <div class="feedback-container">
+                <h1 class="font-medium text-2xl">Customer Feedback</h1>
+                <form action="/submit-feedback" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="" disabled selected>Select your rating</option>
+                            <option value="1">1 - Poor</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="3">3 - Good</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="5">5 - Excellent</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Your feedback here..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Submit Feedback">
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <!--section of the gallery-->
+        <section class="gallery">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="gallary.jpg" alt="Dish 1">
+                    <div class="description">Delicious Dish 1</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary.jpg" alt="Dish 2">
+                    <div class="description">Tasty Dish 2</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary.jpg" alt="Dish 3">
+                    <div class="description">Yummy Dish 3</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary.jpg" alt="Dish 4">
+                    <div class="description">Scrumptious Dish 4</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary.jpg" alt="Dish 5">
+                    <div class="description">Delightful Dish 5</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallary.jpg" alt="Dish 6">
+                    <div class="description">Savory Dish 6</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--date and time-->
+        <div class="footer block text-center mt-16 p-2" id="datetime">
+            <!-- Date and time will be injected here by JavaScript -->
+        </div>
+        <!--date time js-->
+        <script>
+            function updateDateTime() {
+                const now = new Date();
+                const options = {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: true
+                };
+                const dateTimeString = now.toLocaleDateString('en-US', options);
+                document.getElementById('datetime').innerText = dateTimeString;
+            }
+    
+            // Update the date and time on page load
+            updateDateTime();
+    
+            // Optionally, update the date and time every second
+            setInterval(updateDateTime, 1000);
+        </script>
+       
+    </body>
+    <footer>
+        
+
+    </footer>
+</body>
+
+</html>
