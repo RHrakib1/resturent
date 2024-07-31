@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -26,59 +43,56 @@
         </div>
     </div>
     <!--section of faq-->
-    <section class="p-5 mt-5">
-        <div class="collapse collapse-arrow bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">What are your opening hours?</div>
-            <div class="collapse-content">
-                <p>We are open from 10:00 AM to 10:00 PM from Monday to Sunday.</p>
-            </div>
+    <h1 class="font-extrabold text-5xl m-3">FAQ</h1>
+    <section class="flex flex-1 justify-between items-center ml-2">
+
+        <div>
+            <img class=" max-h-96 rounded-2xl" src="./faq2.jpg" alt="">
         </div>
-        <div class="collapse collapse-arrow bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Can I make a reservation?</div>
-            <div class="collapse-content">
-                <p>Yes, you can make a reservation by calling us at (123) 456-7890 or by using our online reservation system.</p>
-            </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Do you offer delivery services?</div>
-            <div class="collapse-content">
-                <p>Yes, we offer delivery through various food delivery platforms. Please check our website for more information.</p>
-            </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Do you offer vegetarian or vegan options?</div>
-            <div class="collapse-content">
-                <p>Yes, we offer a variety of vegetarian and vegan dishes. Please check our menu for more details.</p>
-            </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">Is there parking available?</div>
-            <div class="collapse-content">
-                <p>Yes, we have a parking lot available for our customers.</p>
-            </div>
+        <div>
+            <section class="p-5 mt-5">
+                <div class="collapse collapse-arrow bg-base-200 mb-2">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What are your opening hours?</div>
+                    <div class="collapse-content">
+                        <p>We are open from 10:00 AM to 10:00 PM from Monday to Sunday.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Can I make a reservation?</div>
+                    <div class="collapse-content">
+                        <p>Yes, you can make a reservation by calling us at (123) 456-7890 or by using our online
+                            reservation system.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Do you offer delivery services?</div>
+                    <div class="collapse-content">
+                        <p>Yes, we offer delivery through various food delivery platforms. Please check our website for
+                            more information.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Do you offer vegetarian or vegan options?</div>
+                    <div class="collapse-content">
+                        <p>Yes, we offer a variety of vegetarian and vegan dishes. Please check our menu for more
+                            details.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200 mb-2">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Is there parking available?</div>
+                    <div class="collapse-content">
+                        <p>Yes, we have a parking lot available for our customers.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 10px;
-            box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
-        }
-    </style>
+
 
 
 
